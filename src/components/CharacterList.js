@@ -29,13 +29,17 @@ console.log(api)
   return (
 
     <section className="character-list">
-      <h2>
-        TODO: `array.map()` over your state here!
+     
       {api.map(character => {
-          return (<CharacterCard key={character.id} character={character} />)
+          return (
+            <div className='character'>
+                <CharacterCard key={character.id} character={character} />
+            </div>
+          
+            )
         }
         )}
-      </h2>
+  
     </section>
   );
 
